@@ -14,13 +14,13 @@ class Forecast{
     };
     async getWeather(id){
         const query = `${id}?apikey=${this.key}`;
-        const response = await fetch(this.weatherURI+query);
+        const response = await fetch(this.weatherURI+query,{mode: 'cors'});
         const data = await response.json();
         return data[0];
     };
     async getCity(city){
         const query = `?apikey=${this.key}&q=${city}`;
-        const response = await fetch(this.cityURI+query);
+        const response = await fetch(this.cityURI+query,{mode: 'cors'});
         const data = await response.json();
         return data[0];
     };
