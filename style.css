@@ -6,8 +6,8 @@ html,body{
     
 }
 .container{
-    max-width: 350px;
-    letter-spacing: 10px;
+    max-width: 400px;
+    letter-spacing: 5px;
 }
 .icon{
     position: relative;
